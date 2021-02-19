@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "IM Fell English SC", serif;
+}
+
+p {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  background-color: #071d28;
+  background-attachment: fixed;
+  background-image: url("http://irongatestudio.se/onewebmedia/bg_clouds04.png");
+  background-size: 100% 100%;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#background-video {
+  height: 100%;
+  /* Hide the video until it's loaded */
+  opacity: 0;
+  transition: opacity 250ms linear;
+  width: 100%;
+}
+
+.youtube-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.youtube-video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

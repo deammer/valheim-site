@@ -1,0 +1,167 @@
+<div class="container max-w-5xl mx-auto text-white px-4 py-12 mb-20">
+  <div class="text-center my-4">
+    <h3
+      class="text-6xl bg-black bg-opacity-50 pt-4 pb-2 px-6 uppercase inline-block"
+    >
+      About Valheim
+    </h3>
+  </div>
+  <p class="leading-relaxed mb-6">
+    A battle-slain warrior, the Valkyries have ferried your soul to Valheim, the
+    tenth Norse world. Besieged by creatures of chaos and ancient enemies of the
+    gods, you are the newest custodian of the primordial purgatory, tasked with
+    slaying Odin’s ancient rivals and bringing order to Valheim.
+  </p>
+  <div class="block md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+    <div class="">
+      <img src="/images/screenshots/explore_image.jpg" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Explore</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        A beautiful, procedurally-generated world awaits you. Venture into deep
+        dark forests, climb snow-peaked mountains and marvel at lush valleys.
+        Take to the seas on a mighty longship, but be wary of sailing too far...
+      </p>
+    </div>
+    <div class="">
+      <img src="/images/screenshots/build_image.jpg" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Build</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        Raise your own viking mead halls, houses, castles, and more with our
+        powerful construction interface. From knarrs to imposing warships, build
+        legendary vessels to conquer the seas and discover new lands.
+      </p>
+    </div>
+    <div class="">
+      <img src="/images/screenshots/conquer_image.jpg" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Conquer</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        Battle the mythical beasts of the tenth world and animal wildlife in
+        punishing dodge & block based combat.
+      </p>
+    </div>
+    <div class="">
+      <img src="/images/screenshots/craft_image.png" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Craft</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        Forge increasingly powerful weapons and armour as you advance. Craft
+        food and mead to maintain your health.
+      </p>
+    </div>
+    <div class="">
+      <img src="/images/screenshots/survive_image.png" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Survive</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        From the highest mountain peak to the deepest swamp, each environment
+        presents unique challenges and foes.
+      </p>
+    </div>
+    <div class="">
+      <img src="/images/screenshots/cooperate_image.png" class="" alt="" />
+      <h4 class="text-5xl text-center my-8">Cooperate</h4>
+      <p class="text-lg leading-relaxed mb-6">
+        Valheim supports independent, player-hosted servers and as many worlds
+        as you wish to create, because no one wants to continuously die alone.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center mt-20 mb-12">
+    <h3
+      class="text-6xl bg-black bg-opacity-50 pt-4 pb-2 px-6 uppercase inline-block"
+    >
+      Videos
+    </h3>
+  </div>
+
+  <div class="youtube-video-wrapper mb-8">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/Ly2P6powIjw"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="youtube-video-wrapper mb-8">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/oNx-9YsOpBo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="md:grid grid-cols-2 gap-8">
+    <div>
+      <div class="youtube-video-wrapper">
+        <iframe
+          width="853"
+          height="480"
+          src="https://www.youtube-nocookie.com/embed/nsBxoVbGf4E"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div>
+      <div class="youtube-video-wrapper">
+        <iframe
+          width="853"
+          height="480"
+          src="https://www.youtube-nocookie.com/embed/nUREJDk9Sj4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div>
+      <div class="youtube-video-wrapper">
+        <iframe
+          width="853"
+          height="480"
+          src="https://www.youtube-nocookie.com/embed/kTHqJ1LWs70"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div>
+      <div class="youtube-video-wrapper">
+        <iframe
+          width="853"
+          height="480"
+          src="https://www.youtube-nocookie.com/embed/B8ypHqJqGs8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-20 mb-12">
+    <h3
+      class="text-6xl bg-black bg-opacity-50 pt-4 pb-2 px-6 uppercase inline-block"
+    >
+      Screenshots
+    </h3>
+  </div>
+
+  <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for screenshot in screenshots -%}
+    <img
+      data-lightbox
+      class="cursor-pointer"
+      src="{{ screenshot.path }}"
+      alt="{{ screenshot.alt }}"
+    />
+    {% endfor -%}
+  </div>
+</div>
