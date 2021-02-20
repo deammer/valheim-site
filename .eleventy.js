@@ -1,6 +1,5 @@
 const markdownIt = require("markdown-it");
 const markdownItLinkAttributes = require("markdown-it-link-attributes");
-const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // Customize the Markdown rendering
@@ -21,8 +20,8 @@ module.exports = function (eleventyConfig) {
 
   // Add our custom shortcodes, filters, and such
   eleventyConfig.addNunjucksAsyncShortcode(
-    "image",
-    require("./src/plugins/images").imageShortcode
+    "headerImage",
+    require("./src/plugins/images").headerImageShortcode
   );
 
   eleventyConfig.addNunjucksAsyncShortcode(
@@ -33,6 +32,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode(
     "screenshot",
     require("./src/plugins/images").screenshotShortcode
+  );
+
+  eleventyConfig.addNunjucksAsyncShortcode(
+    "srcSet",
+    require("./src/plugins/images").srcSetShortcode
   );
 
   // Tell 11ty where to look for files

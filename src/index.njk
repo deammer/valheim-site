@@ -26,7 +26,7 @@ layout: base.njk
     </video>
   </div>
   <div class="max-w-6xl mx-auto px-8 text-center">
-    {% image "./src/images/valheim_transparent_full.png", "Valheim logo", "block w-full max-w-5xl mx-auto mb-8" %}
+    {% headerImage "./src/images/valheim_transparent_full.png", "", "block w-full max-w-5xl mx-auto mb-8" %}
     <h2
       class="text-white bg-black bg-opacity-50 mx-auto px-6 py-4 text-6xl inline-block"
     >
@@ -37,6 +37,6 @@ layout: base.njk
   {% include "homepage/links.html" %}
 </header>
 
-{% include "homepage/welcome.html" %}
+{% include "homepage/welcome.njk" %}
 {% include "homepage/about.njk" %}
 {% include "lightbox.html" %}
