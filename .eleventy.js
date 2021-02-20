@@ -51,7 +51,9 @@ module.exports = function (eleventyConfig) {
     "md",
   ];
 
-  eleventyConfig.addPassthroughCopy("src/images/favicon.jpg");
+  eleventyConfig.addPassthroughCopy({
+    "src/images/favicon.jpg": "favicon.jpg",
+  });
 
   return eleventyConfig;
 };
