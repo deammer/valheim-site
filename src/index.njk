@@ -3,19 +3,43 @@ title: VALHEIM
 layout: base.njk
 ---
 
-<div class="absolute top-0 w-full pointer-events-none z-in" style="height:calc(0.5625*100vw);z-index:-1">
-  <div id="background-video"></div>
-</div>
+<header id="homepage-header" class="pb-24 pt-12 relative">
+  <div
+    id="background-video-container"
+    class="absolute inset-0 pointer-events-none overflow-hidden bg-center bg-cover"
+    style="height: 100%;z-index:-1;background-image: url('/images/video_fallback.png');"
+  >
+    <video
+      id="hosted-video"
+      autoplay
+      muted
+      loop
+      class="h-full w-full object-cover"
+      disablePictureInPicture
+      width="1280"
+      height="720"
+    >
+      <source src="/images/videos/valheim_loop_540_short.mp4" type="video/mp4" media="all and (max-width: 540px)"> 
+      <source src="/images/videos/valheim_loop_720_short.mp4" type="video/mp4" media="all and (max-width: 720px)"> 
+      <source src="/images/videos/valheim_loop_1080_short.mp4" type="video/mp4">
+      <!--<source src="video.webm" type="video/webm"> -->
+    </video>
+  </div>
+  <div class="max-w-6xl mx-auto px-8 text-center">
+    <img
+      src="/images/valheim_logo_transparent.png"
+      class="block w-full max-w-5xl mx-auto mb-8"
+    />
+    <h2
+      class="text-white bg-black bg-opacity-50 mx-auto px-6 py-4 text-6xl inline-block"
+    >
+      Early Access available now!
+    </h2>
+  </div>
 
-<div class="container mx-auto px-8 mt-6 mb-12 text-center">
-  <img src="/images/valheim_logo_transparent.png" class="block w-full max-w-5xl mx-auto" />
-  <h2 class="text-white bg-black bg-opacity-50 mx-auto px-6 py-4 text-6xl inline-block">Early Access available now!</h2>
-</div>
-
-{% include "homepage/links.html" %}
+  {% include "homepage/links.html" %}
+</header>
 
 {% include "homepage/welcome.html" %}
-
 {% include "homepage/about.html" %}
-
 {% include "lightbox.html" %}

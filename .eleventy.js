@@ -26,7 +26,15 @@ module.exports = function (eleventyConfig) {
 
   // Tell 11ty where to look for files
   eleventyConfig.dir = { input: "src", output: "_site" };
-  eleventyConfig.templateFormats = ["html", "njk", "jpg", "jpeg", "png", "md"];
+  eleventyConfig.templateFormats = [
+    "html",
+    "njk",
+    "jpg",
+    "jpeg",
+    "png",
+    "mp4",
+    "md",
+  ];
 
   return eleventyConfig;
 };

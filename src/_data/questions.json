@@ -1,0 +1,126 @@
+[
+  {
+    "section": "General questions",
+    "questions": [
+      {
+        "question": "What is Valheim all about?",
+        "answer": "Prove your worth to Odin by helping him reclaim the long forgotten lands of Valheim. Survive in Valheim’s hostile environments by gathering resources, building outposts and farms, and slaying the monsters that stand in your way. Work up your courage and strength to take on the nine Forsaken Ones to free Valheim from their grasp."
+      },
+      {
+        "question": "Is Valheim built for multiplayer only?",
+        "answer": "No, Valheim can be played either as a singleplayer or a co-op game. But we would of course highly recommend you to play it with a few friends if possible!"
+      },
+      {
+        "question": "Does Valheim have a Sandbox mode?",
+        "answer": "No, it does not. We have discussed adding it though and might do so in the future, if the demand is there."
+      },
+      {
+        "question": "The visuals of Valheim look kind of old, what is up with that?",
+        "answer": "We have chosen a stylized graphical look that blends low-resolution textures and sparse polygonal detail with modern materials, lighting and post effects. The visuals are inspired by the early days of 3D graphics, like the style seen in PS1 titles and old DOS-era 3D games (before hardware acceleration and texture filtering was a thing). "
+      },
+      {
+        "question": "On which platforms will Valheim be released?",
+        "answer": "Valheim will be released on Windows and Linux via Steam. A Mac-version will be released if there is any significant demand for it. There are no plans to release on other platforms as of the time of writing but we won’t rule out console versions in the future."
+      },
+      {
+        "question": "Does Valheim support gamepad?",
+        "answer": "Yes! Valheim fully supports the Microsoft Xbox360 gamepad. It does also support the Xbox One gamepad, due to differing protocols however one or two buttons might have different functionality, but we’re working on it!"
+      },
+      {
+        "question": "Can I customize my in-game ‘stuff’, such as weapons and armor?",
+        "answer": " Some items can be customized, like choosing paint jobs for almost every shield and pick colours on linen capes.. It is quite possible there will be more possibilities for customizing all sorts of stuff in the future but right now we’re focusing on the mechanics and general contents of the game. "
+      },
+      {
+        "question": "Can I customize the appearance of my viking?",
+        "answer": "The Player character is fully customizable with the choice of two body types and a number of different hairstyles, beards, and complexions"
+      },
+      {
+        "question": "Will I be able to use mods?",
+        "answer": "We won’t have official support for mods."
+      },
+      {
+        "question": "What happened to the Itch.io version of Valheim?",
+        "answer": "The ancient Itch.io (Alpha) release of Valheim has been removed from the Itch.io site due to it not really reflecting the state of the game any longer. If you are in possession of the Itch.io version you are free to share it as you wish, but we won’t be providing any support for it going forward."
+      },
+      {
+        "question": "Do you still accept donations for the development of Valheim?",
+        "answer": "We have signed a publishing agreement with Coffee Stain Publishing and will therefore no longer accept monetary donations. Chocolate and other sweets are still welcome :)"
+      },
+      {
+        "question": "How much will the game cost?",
+        "answer": "We haven’t decided yet, but we will use the traditional ‘buy once, play forever’ pricing model."
+      },
+      {
+        "question": "When is Odin satisfied?",
+        "answer": "The Allfather is overseeing development closely and he gets more and more satisfied each day that passes… Odin has very high standards though and he is still not quite ready to let us release the game. But rest assured the release date is coming, you won’t have to wait until Ragnarök!"
+      },
+      {
+        "question": "Will Valheim be available on early access?",
+        "answer": "Yes! Valheim will be available as an early access game on Steam."
+      },
+      {
+        "question": "Can I help in any way?",
+        "answer": "Yes! The best way to help us is by Wishlisting the game on Steam and spreading the word! :)"
+      }
+    ]
+  },
+  {
+    "section": "Gameplay questions",
+    "questions": [
+      {
+        "question": "Is there a lot to explore in Valheim?",
+        "answer": "Valheim is a vast procedurally generated world with many different biomes. Every biome has its own challenging environment, enemies and secrets to discover. Travel through deep forests, through harsh snowstorms in the mountains or sail the high seas if you dare. If you’re not the outdoorsy type, there are plenty of dungeons, crypts and caves for you to explore as well. "
+      },
+      {
+        "question": "Valheim sounds very big. What other means are there to travel other than running?",
+        "answer": "You can craft three different types of boats to use for sailing from place to place, as well as portals that can take you wherever you want."
+      },
+      {
+        "question": "How does crafting work?",
+        "answer": "You can build many different workbenches and crafting stations like kilns, smelters and windmills that you can use for refining raw materials. Use the materials you have gathered to craft an array of different armors, weapons and tools. You can also build boats and bases."
+      },
+      {
+        "question": "Can I build my own bases from the ground up? ",
+        "answer": "Yes! We have a robust construction system where you can choose from different types of floors, walls, roofs and furnitures to build and decorate your base in any way you might want. Our Beta testers have built anything from little fishing villages to enormous castles. What do you want to build? "
+      },
+      {
+        "question": "Do you eat in Valheim?",
+        "answer": "There are many types of food in Valheim, from mushrooms and berries to pies and fish wraps that all come with different attributes. Eating food is not vital for survival in Valheim, but your total health and stamina depends on it. You are able to cultivate the grounds around your base to farm your own materials, and you can tame animals and keep them in pens to later use their meat. "
+      },
+      {
+        "question": "What does the progression look like in Valheim?",
+        "answer": "Every biome comes with its own difficulty and unique resources for crafting armor and weapons. To conquer a biome you have to defeat its corresponding Forsaken One in a brutal boss battle, then use your newly gained items and skills to move on to the next one. Defeat all the Forsaken Ones and conquer their lands to carry out Odin’s mission."
+      }
+    ]
+  },
+  {
+    "section": "Multiplayer questions",
+    "questions": [
+      {
+        "question": "Is there any PVP in Valheim?",
+        "answer": "Although the main focus of Valheim is PVE, we support consensual PVP. Players that wish to bash each other over the head have to turn on the PVP setting from the Inventory-screen."
+      },
+      {
+        "question": "Is there any in-game communication in Valheim?",
+        "answer": "Valheim supports in-game chat, but you’ll have to use dedicated software such as Discord or TeamSpeak for voice communication."
+      },
+      {
+        "question": "How many Players can play at the same time?",
+        "answer": "Valheim is a co-op game meant to be played with a couple of friends, servers are capped at 10 players."
+      },
+      {
+        "question": "How does a multiplayer-server work?",
+        "answer": "When starting the game you can create your own p2p-based play session that can be either public or private, Iron Gate does not provide any official servers. If you wish to run a persistent server you can download the Valheim Dedicated Server-application from Steam."
+      }
+    ]
+  },
+  {
+    "section": "Iron Gate questions",
+    "questions": [
+      {
+        "question": "Tell me a little about yourselves!",
+        "answer": "Iron Gate is a small company operating out of Sweden. Currently the company consists of four full-time employees and one part-time consultant, with the ambition to expand the team over the long run. We have the ambition to focus primarily on development internally, with all employees being part of the production staff (our CEO is the main programmer, as well as creator of Valheim). Our publishing partner Coffee Stain Publishing helps us with many aspects of the business such as marketing and other business stuff."
+      }
+    ]
+  }
+]
