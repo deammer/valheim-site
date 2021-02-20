@@ -51,5 +51,7 @@ module.exports = function (eleventyConfig) {
     "md",
   ];
 
+  eleventyConfig.addPassthroughCopy("src/images/favicon.jpg");
+
   return eleventyConfig;
 };

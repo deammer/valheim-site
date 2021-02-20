@@ -6,9 +6,18 @@ layout: base.njk
 <header id="homepage-header" class="pb-24 pt-12 relative">
   <div
     id="background-video-container"
-    class="absolute inset-0 pointer-events-none overflow-hidden bg-center bg-cover"
-    style="height: 100%;z-index:-1;background-image: url('/images/video_fallback.png');"
+    class="absolute inset-0 pointer-events-none overflow-hidden"
+    style="height: 100%;z-index:-1;"
   >
+    <picture>
+      {% srcSet "/images/video_fallback.png", [360, 720, 1280, 1920, 2560] %}
+      <img
+        src="/images/video_fallback.png"
+        sizes="100vw"
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        style="z-index:-1"
+        alt="" />
+    </picture>
     <video
       id="hosted-video"
       autoplay

@@ -85,7 +85,7 @@ async function logoShortcode(src, alt) {
 
 async function fullScreenImageShortcode(src) {
   return await generatePicture(src, {
-    widths: [768, 1024, 1440, 2560, null],
+    widths: [768, 1024, 1440, 2048],
     alt: "",
   });
 }
