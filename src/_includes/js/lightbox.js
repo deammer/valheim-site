@@ -1,5 +1,6 @@
 (function () {
   let lightboxIsVisible = false;
+  let lastFocusedElement = null;
 
   const closeLightboxElements = document.querySelectorAll(
     "[data-close-lightbox]"
@@ -31,6 +32,11 @@
     lightboxElement.style.display = "none";
     document.removeEventListener("keydown", onKeydown);
 
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+      lastFocusedElement = null;
+    }
+
     // Remove the elements inside the container
     while (lightboxContainerElement.firstChild) {
       lightboxContainerElement.removeChild(lightboxContainerElement.firstChild);
@@ -54,7 +60,8 @@
 
   lightboxTargets.forEach((target) => {
     target.addEventListener("click", (event) => {
-      const { src, alt } = event.target;
+      const src = event.currentTarget.dataset.lightboxSrc;
+      const alt = event.currentTarget.dataset.lightboxAlt;
 
       const imageElem = document.createElement("img");
       imageElem.src = src;
@@ -62,6 +69,8 @@
       imageElem.style.display = "block";
       imageElem.style.maxHeight = "100%";
       lightboxContainerElement.appendChild(imageElem);
+
+      lastFocusedElement = event.currentTarget;
 
       // Show the whole thing
       showLightbox();

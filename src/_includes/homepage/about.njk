@@ -16,7 +16,7 @@
     <div>
       <img
         src="/images/screenshots/explore_image.jpg"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -31,7 +31,7 @@
     <div>
       <img
         src="/images/screenshots/build_image.jpg"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -46,7 +46,7 @@
     <div>
       <img
         src="/images/screenshots/conquer_image.jpg"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -60,7 +60,7 @@
     <div>
       <img
         src="/images/screenshots/craft_image.png"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -74,7 +74,7 @@
     <div>
       <img
         src="/images/screenshots/survive_image.png"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -88,7 +88,7 @@
     <div>
       <img
         src="/images/screenshots/cooperate_image.png"
-        lazy
+        loading="lazy"
         width="310"
         height="174"
         alt=""
@@ -195,18 +195,16 @@
   </h3>
 
   <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {% for screenshot in screenshots -%}
-    <img
-      data-lightbox
-      lazy
-      width="310"
-      height="174"
-      width="310"
-      height="174"
-      class="cursor-pointer"
-      src="{{ screenshot.path }}"
-      alt="{{ screenshot.alt }}"
-    />
+    {% for image in screenshots -%}
+      <a
+        href="javascript:void"
+        data-lightbox
+        data-lightbox-src="{{ image.path }}"
+        data-lightbox-alt="{{ image.alt }}"
+        class="block focus:ring"
+      >
+        {% screenshot "./src" + image.path, image.alt, "cursor-pointer" %}
+      </a>
     {% endfor -%}
   </div>
 </div>
