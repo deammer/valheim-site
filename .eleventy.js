@@ -39,6 +39,11 @@ module.exports = function (eleventyConfig) {
     require("./src/plugins/images").srcSetShortcode
   );
 
+  eleventyConfig.addNunjucksShortcode(
+    "youtubeEmbed",
+    require("./src/plugins/video").videoEmbedShortcode
+  );
+
   // Tell 11ty where to look for files
   eleventyConfig.dir = { input: "src", output: "_site" };
   eleventyConfig.templateFormats = [
