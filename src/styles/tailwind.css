@@ -22,6 +22,17 @@ body {
   text-shadow: 1px 1px 2px #000;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Offset anchor link targets to make up for the fixed nav */
+:target {
+  scroll-margin-top: 100px;
+}
+
 #background-video {
   height: 100%;
   /* Hide the video until it's loaded */

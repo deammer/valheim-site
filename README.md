@@ -1,10 +1,7 @@
 ## Improvements
 
-- offset the anchors by 80px
 - maybe some parallax?
-- better lightbox
 - add a sitemap https://dev.to/loige/create-a-sitemap-for-your-eleventy-website-25h
-- meta tags
 
 ## Video background
 
