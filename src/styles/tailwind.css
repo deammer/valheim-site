@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Alegreya Sans */
+@font-face {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/alegreya-sans-v13-latin-regular.woff2") format("woff2"),
+    url("../fonts/alegreya-sans-v13-latin-regular.woff") format("woff");
+}
+
+/* IM Fell English SC */
+@font-face {
+  font-family: "IM Fell English SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/im-fell-english-sc-v10-latin-regular.woff2") format("woff2"),
+    url("../fonts/im-fell-english-sc-v10-latin-regular.woff") format("woff");
+}
+
 h1,
 h2,
 h3,

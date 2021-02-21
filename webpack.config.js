@@ -9,6 +9,7 @@ module.exports = {
   entry: ["./src/scripts/main.js", "./src/styles/tailwind.css"],
   devtool: isDev ? "cheap-module-source-map" : "source-map",
   output: {
+    publicPath: "",
     path: path.resolve(__dirname, "_site/assets"),
     filename: "main.js",
   },
@@ -22,6 +23,10 @@ module.exports = {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },

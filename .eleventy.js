@@ -63,6 +63,7 @@ module.exports = function (eleventyConfig) {
   ];
 
   eleventyConfig.addPassthroughCopy({
+    // "src/fonts": "fonts",
     "src/images/favicon.jpg": "favicon.jpg",
   });
 
