@@ -4,19 +4,19 @@ layout: base.njk
 ---
 
 <header class="py-12 bg-cover bg-center" style="background-image:url('/images/battle_scene.png')">
-  <div class="max-w-4xl mx-auto text-white text-center flex flex-col">
-    <h1 class="bg-black bg-opacity-50 pt-4 pb-2 text-6xl white mb-8">
+  <div class="max-w-4xl mx-auto text-white text-center flex flex-col px-4">
+    <h1 class="bg-black bg-opacity-50 pt-4 pb-2 text-4xl white mb-8 md:text-6xl">
       Frequently-Asked Questions
     </h1>
     <time class="text-2xl">Updated January 18th, 2021</time>
   </div>
 </header>
 
-<div class="max-w-4xl py-12 mx-auto text-white">
+<div class="max-w-4xl py-12 px-6 mx-auto text-white">
   {% for questionList in questions -%}
-    <h2 class="text-4xl my-8">{{ questionList.section }}</h2>
+    <h2 class="text-3xl md:text-4xl my-8">{{ questionList.section }}</h2>
     {% for question in questionList.questions %}
-      <h3 class="text-3xl my-6">{{ question.question }}</h3>
+      <h3 class="text-xl md:text-3xl my-6">{{ question.question }}</h3>
       <p class="text-lg mb-20">{{ question.answer }}</p>
     {% endfor -%}
   {% endfor -%}

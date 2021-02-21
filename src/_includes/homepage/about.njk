@@ -1,7 +1,7 @@
-<div class="container max-w-5xl mx-auto text-white px-4 py-20 mb-20">
+<div class="max-w-5xl mx-auto text-white px-6 py-20 mb-20 overflow-y-auto">
   <h3
     id="about"
-    class="text-5xl bg-black bg-opacity-50 pt-6 pb-4 px-6 mb-8 uppercase text-center"
+    class="text-3xl pt-2 pb-1 md:text-5xl bg-black bg-opacity-50 md:pt-6 md:pb-4 mb-8 uppercase text-center"
   >
     About Valheim
   </h3>
@@ -14,8 +14,8 @@
   </p>
   <div class="block md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
     <div>
-      {% screenshot "./src/images/screenshots/explore_image.jpg", "" %}
-      <h4 class="text-5xl text-center my-8">Explore</h4>
+      {% screenshot "./src/images/screenshots/explore_image.jpg", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Explore</h4>
       <p class="text-lg leading-relaxed mb-6">
         A beautiful, procedurally-generated world awaits you. Venture into deep
         dark forests, climb snow-peaked mountains and marvel at lush valleys.
@@ -23,8 +23,8 @@
       </p>
     </div>
     <div>
-      {% screenshot "./src/images/screenshots/build_image.jpg", "" %}
-      <h4 class="text-5xl text-center my-8">Build</h4>
+      {% screenshot "./src/images/screenshots/build_image.jpg", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Build</h4>
       <p class="text-lg leading-relaxed mb-6">
         Raise your own viking mead halls, houses, castles, and more with our
         powerful construction interface. From knarrs to imposing warships, build
@@ -32,32 +32,32 @@
       </p>
     </div>
     <div>
-      {% screenshot "./src/images/screenshots/conquer_image.jpg", "" %}
-      <h4 class="text-5xl text-center my-8">Conquer</h4>
+      {% screenshot "./src/images/screenshots/conquer_image.jpg", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Conquer</h4>
       <p class="text-lg leading-relaxed mb-6">
         Battle the mythical beasts of the tenth world and animal wildlife in
         punishing dodge & block based combat.
       </p>
     </div>
     <div>
-      {% screenshot "./src/images/screenshots/craft_image.png", "" %}
-      <h4 class="text-5xl text-center my-8">Craft</h4>
+      {% screenshot "./src/images/screenshots/craft_image.png", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Craft</h4>
       <p class="text-lg leading-relaxed mb-6">
         Forge increasingly powerful weapons and armour as you advance. Craft
         food and mead to maintain your health.
       </p>
     </div>
     <div>
-      {% screenshot "./src/images/screenshots/survive_image.png", "" %}
-      <h4 class="text-5xl text-center my-8">Survive</h4>
+      {% screenshot "./src/images/screenshots/survive_image.png", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Survive</h4>
       <p class="text-lg leading-relaxed mb-6">
         From the highest mountain peak to the deepest swamp, each environment
         presents unique challenges and foes.
       </p>
     </div>
     <div>
-      {% screenshot "./src/images/screenshots/cooperate_image.png", "" %}
-      <h4 class="text-5xl text-center my-8">Cooperate</h4>
+      {% screenshot "./src/images/screenshots/cooperate_image.png", "", "w-full" %}
+      <h4 class="text-3xl md:text-5xl text-center my-8">Cooperate</h4>
       <p class="text-lg leading-relaxed mb-6">
         Valheim supports independent, player-hosted servers and as many worlds
         as you wish to create, because no one wants to continuously die alone.
@@ -67,7 +67,7 @@
 
   <h3
     id="videos"
-    class="text-5xl bg-black bg-opacity-50 pt-6 pb-4 px-6 mb-8 uppercase text-center"
+    class="text-3xl pt-2 pb-1 md:text-5xl bg-black bg-opacity-50 md:pt-6 md:pb-4 px-6 mb-8 uppercase text-center"
   >
     Videos
   </h3>
@@ -98,7 +98,7 @@
     ></iframe>
   </div>
 
-  <div class="md:grid grid-cols-2 gap-8 mb-24">
+  <div class="space-y-8 md:space-y-0 md:grid grid-cols-2 gap-8 mb-24">
     <div>
       <div class="youtube-video-wrapper">
         <iframe
@@ -159,12 +159,12 @@
 
   <h3
     id="screenshots"
-    class="text-5xl bg-black bg-opacity-50 pt-6 pb-4 px-6 mb-8 uppercase text-center"
+    class="text-3xl pt-2 pb-1 md:text-5xl bg-black bg-opacity-50 md:pt-6 md:pb-4 px-6 mb-8 uppercase text-center"
   >
     Screenshots
   </h3>
 
-  <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     {% for image in screenshots -%}
       <a
         href="javascript:void"
@@ -173,7 +173,7 @@
         data-lightbox-alt="{{ image.alt }}"
         class="block focus:ring"
       >
-        {% screenshot "./src" + image.path, image.alt, "cursor-pointer" %}
+        {% screenshot "./src" + image.path, image.alt, "cursor-pointer w-full" %}
       </a>
     {% endfor -%}
   </div>
