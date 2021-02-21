@@ -75,6 +75,13 @@ body {
   width: 100%;
 }
 
+.branches-bg {
+  background-color: transparent;
+  background-image: url("../images/branches_background.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
 /* Mobile burger stuff */
 .burger-box {
   position: relative;

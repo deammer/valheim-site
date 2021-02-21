@@ -1,8 +1,5 @@
 ## Improvements
 
-- maybe some parallax?
-- add a sitemap https://dev.to/loige/create-a-sitemap-for-your-eleventy-website-25h
-
 ## Video background
 
 Guidelines:

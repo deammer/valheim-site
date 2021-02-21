@@ -12,12 +12,14 @@ layout: base.njk
   </div>
 </header>
 
-<div class="max-w-4xl py-12 px-6 mx-auto text-white">
-  {% for questionList in questions -%}
-    <h2 class="text-3xl md:text-4xl my-8">{{ questionList.section }}</h2>
-    {% for question in questionList.questions %}
-      <h3 class="text-xl md:text-3xl my-6">{{ question.question }}</h3>
-      <p class="text-lg mb-20">{{ question.answer }}</p>
+<section class="branches-bg">
+  <div class="max-w-4xl py-12 px-6 mx-auto text-white">
+    {% for questionList in questions -%}
+      <h2 class="text-3xl md:text-4xl my-8">{{ questionList.section }}</h2>
+      {% for question in questionList.questions %}
+        <h3 class="text-xl md:text-3xl my-6">{{ question.question }}</h3>
+        <p class="text-lg mb-20">{{ question.answer }}</p>
+      {% endfor -%}
     {% endfor -%}
-  {% endfor -%}
-</div>
+  </div>
+</section>
