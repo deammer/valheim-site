@@ -10,9 +10,19 @@ function getSourceRoot(src) {
   return "./src" + src;
 }
 
+function assignDefinedProps(target, source) {
+  for (const key of Object.keys(source)) {
+    const val = source[key];
+    if (val !== undefined) {
+      target[key] = val;
+    }
+  }
+  return target;
+}
+
 async function generatePicture(src, options) {
   // Add defaults to the options
-  options = Object.assign(
+  options = assignDefinedProps(
     {
       className: "",
       sizes: "100vw",
@@ -37,16 +47,13 @@ async function generatePicture(src, options) {
 
   let lowsrc = metadata.png[0];
 
+  const sourceElements = Object.values(metadata).map((imageFormat) => {
+    const srcSet = imageFormat.map((entry) => entry.srcset).join(", ");
+    return `<source type="${imageFormat[0].sourceType}" srcset="${srcSet}" sizes="100vw">`;
+  });
+
   return `<picture>
-    ${Object.values(metadata)
-      .map((imageFormat) => {
-        return `<source type="${
-          imageFormat[0].sourceType
-        }" srcset="${imageFormat
-          .map((entry) => entry.srcset)
-          .join(", ")} sizes="100vw">`;
-      })
-      .join("\n")}
+      ${sourceElements.join("\n")}
       <img
         class="${options.className}"
         height="${lowsrc.height}"
@@ -66,7 +73,7 @@ async function screenshotShortcode(src, alt, className) {
   });
 }
 
-async function headerImageShortcode(src, alt, className) {
+async function headerImageShortcode(src, alt, className = "") {
   return await generatePicture(src, {
     alt,
     widths: [512, 1024, 2048],
@@ -99,11 +106,8 @@ async function srcSetShortcode(src, widths) {
 
   return Object.values(metadata)
     .map((imageFormat) => {
-      return `<source type="${
-        imageFormat[0].sourceType
-      }" srcset="${imageFormat
-        .map((entry) => entry.srcset)
-        .join(", ")} sizes="100vw">`;
+      const srcSet = imageFormat.map((entry) => entry.srcset).join(", ");
+      return `<source type="${imageFormat[0].sourceType}" srcset="${srcSet}" sizes="100vw">`;
     })
     .join("\n");
 }
