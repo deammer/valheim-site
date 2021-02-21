@@ -1,10 +1,16 @@
 const markdownIt = require("markdown-it");
 const markdownItLinkAttributes = require("markdown-it-link-attributes");
+const format = require("date-fns/format");
 
 module.exports = function (eleventyConfig) {
   // Customize the Markdown rendering
   const markdownRenderer = markdownIt({
     html: true,
+  });
+
+  // Add a "date" filter
+  eleventyConfig.addFilter("date", function (date, dateFormat) {
+    return format(date, dateFormat);
   });
 
   // Add attributes to external links
