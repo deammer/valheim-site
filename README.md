@@ -157,6 +157,8 @@ The lightbox (the UI that displays screenshots) can now be closed using the Esca
 
 The original website does pretty well on that front. The only thing that was missing was a `description` meta tag, which I've added. This is used by search engines to summarize the content of a page.
 
+ℹ️ note: I've disabled search engine indexing to avoid competing with the original website.
+
 ### Best practices
 
 Some of the images were delivered over `http` instead of `https`, which is a [potential security risk](https://web.dev/is-on-https/). Most browsers will also display a warning when they detect mixed content, which can reduce visitors' trust in a website.
