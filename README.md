@@ -14,11 +14,12 @@ Here's a side-by-side comparison of Lighthouse audits:
 
 | Original website                                                              | Improved website                                                         |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| https://www.valheimgame.com                                                   | https://valheimgame.netlify.app                                          |
 | ![Lighthouse audit of the original website](/docs/valheim_audit_original.png) | ![Lighthouse audit of the improved website](/docs/valheim_audit_new.png) |
 
 The biggest problems with the existing site are:
 
-- the youtube video in the background is extremely slow to download. It is also hidden for a few seconds until the Youtube branding goes away.
+- the youtube video in the background is extremely slow to download. It is also hidden for a few seconds until the Youtube branding goes away, and it doesn't work in some browsers.
 - the images are very large. For example, one of the background images measures 3840x1728px and is 90% transparent, which is a waste of bandwidth.
 - the screenshots aren't accessible to keyboard users, ie it's impossible to enlarge the images in the gallery without a mouse
 - the "About", "Videos", and "Screenshots" links in the nav reload the page instead of scrolling down
