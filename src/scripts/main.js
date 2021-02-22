@@ -1,4 +1,10 @@
 (function () {
+  // Autoplay the video (autoplay is disabled in mobile browsers)
+  const video = document.getElementById("hosted-video");
+  if (video) {
+    video.play();
+  }
+
   // Handle the mobile navigation menu
   const navElement = document.getElementById("js-nav-container");
   const triggerElement = document.getElementById("js-nav-trigger");
