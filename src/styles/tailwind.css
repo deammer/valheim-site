@@ -7,6 +7,7 @@
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(""),
     url("../fonts/alegreya-sans-v13-latin-regular.woff2") format("woff2"),
     url("../fonts/alegreya-sans-v13-latin-regular.woff") format("woff");
@@ -17,6 +18,7 @@
   font-family: "IM Fell English SC";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(""),
     url("../fonts/im-fell-english-sc-v10-latin-regular.woff2") format("woff2"),
     url("../fonts/im-fell-english-sc-v10-latin-regular.woff") format("woff");
