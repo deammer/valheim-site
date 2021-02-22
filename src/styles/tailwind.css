@@ -55,14 +55,6 @@ body {
   scroll-margin-top: 100px;
 }
 
-#background-video {
-  height: 100%;
-  /* Hide the video until it's loaded */
-  opacity: 0;
-  transition: opacity 250ms linear;
-  width: 100%;
-}
-
 .youtube-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
