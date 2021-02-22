@@ -9,11 +9,16 @@ layout: base.njk
     class="absolute inset-0 pointer-events-none overflow-hidden"
     style="height: 100%;z-index:-1;"
   >
+    <picture>
+      {% srcSet "/images/video_fallback.png", [720, 1024, 1920] %}
+      <img alt="" id="hosted-video-fallback" class="h-full w-full object-cover hidden" src="/images/video_fallback.png" />
+    </picture>
     <video
       id="hosted-video"
       autoplay
       muted
       loop
+      playsinline
       class="h-full w-full object-cover"
       disablePictureInPicture
       width="1280"

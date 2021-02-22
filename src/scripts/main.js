@@ -2,7 +2,17 @@
   // Autoplay the video (autoplay is disabled in mobile browsers)
   const video = document.getElementById("hosted-video");
   if (video) {
-    video.play();
+    video.volume = 0;
+    video.muted = true;
+    video.play().catch(() => {
+      // The browser probably doesn't allow autoplay
+      // Fall back to an image
+      video.style.display = "none";
+
+      const fallback = document.getElementById("hosted-video-fallback");
+      fallback.classList.remove("hidden");
+      fallback.classList.add("block");
+    });
   }
 
   setTimeout(() => {
