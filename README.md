@@ -118,6 +118,26 @@ The markup looks similar to a `<picture>` tag:
 </video>
 ```
 
+#### Mobile Firefox support
+
+Some browsers do not allow videos to play automatically. Firefox's mobile browser, for example, requires a user interaction to being playing a video. As a result, the background video never appears on the original website. In the new site, I've opted to fall back to an image. This required a bit of JavaScript:
+
+```js
+// Autoplay the video (autoplay is disabled in mobile browsers)
+const video = document.getElementById("hosted-video");
+
+video.play().catch(() => {
+  // If we get here, it's safe to assume to browser won't allow video playback.
+  // Let's then hide the video...
+  video.style.display = "none";
+
+  // ... and display an image as a fallback
+  const fallback = document.getElementById("hosted-video-fallback");
+  fallback.classList.remove("hidden");
+  fallback.classList.add("block");
+});
+```
+
 ### Accessibility
 
 The original website uses divs for everything, which is awful for screen-readers (and SEO!) [Semantic HTML is important!](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
