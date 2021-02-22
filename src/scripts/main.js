@@ -5,6 +5,10 @@
     video.play();
   }
 
+  setTimeout(() => {
+    document.getElementById("hosted-video").play();
+  }, 1000);
+
   // Handle the mobile navigation menu
   const navElement = document.getElementById("js-nav-container");
   const triggerElement = document.getElementById("js-nav-trigger");
