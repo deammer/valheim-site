@@ -76,7 +76,7 @@ async function screenshotShortcode(src, alt, className) {
 async function headerImageShortcode(src, alt, className = "") {
   return await generatePicture(src, {
     alt,
-    widths: [512, 1024, 2048],
+    widths: [512, 720, 1024, 1440, 2048],
     className,
     loading: "eager",
   });
